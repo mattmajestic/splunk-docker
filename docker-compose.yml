@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+  splunk:
+    build: .
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=demo_placeholder
+    ports:
+      - 8000:8000
